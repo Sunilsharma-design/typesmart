@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/btn_rewrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✍️ Rewrite"/>
+
+    <Button
+        android:id="@+id/btn_professional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💼 Professional"/>
+
+    <Button
+        android:id="@+id/btn_casual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="😊 Casual"/>
+
+    <Button
+        android:id="@+id/btn_translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌐 Translate to English"/>
+
+    <Button
+        android:id="@+id/btn_funny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="😂 Funny"/>
+
+    <Button
+        android:id="@+id/btn_flirty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="😉 Flirty"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_replace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Replace Text"
+        android:visibility="gone"/>
+
+</LinearLayout>
