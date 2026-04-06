@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_step1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Step 1: Enable TypeSmart Keyboard"/>
+
+    <Button
+        android:id="@+id/btn_enable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Keyboard"/>
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set as Default"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Not enabled"/>
+
+</LinearLayout>
