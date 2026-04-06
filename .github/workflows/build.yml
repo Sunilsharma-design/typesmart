@@ -9,10 +9,15 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - uses: actions/setup-gradle@v3
-      - run: gradle wrapper
-      - run: chmod +x gradlew
-      - run: ./gradlew assembleDebug
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+      - name: Generate Gradle wrapper jar
+        run: |
+          wget -q https://services.gradle.org/distributions/gradle-8.7-bin.zip
+          unzip -q gradle-8.7-bin.zip
+          ./gradle-8.7/bin/gradle wrapper --gradle-version 8.7
+      - name: Build APK
+        run: ./gradlew assembleDebug
       - uses: actions/upload-artifact@v4
         with:
           name: TypeSmart-APK
